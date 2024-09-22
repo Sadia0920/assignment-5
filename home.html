@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .lexend-font{
+        font-family: "Lexend", sans-serif;
+        }
+      </style>
+</head>
+<body class="lexend-font">
+    <header class="bg-[#F9F7F3] pb-8 pt-4">
+        <div class="flex justify-center mb-7 lg:hidden">
+            <a class="btn btn-ghost text-xl"><span><img src="assets/logo.png" alt=""></span>Donate Bangladesh</a>
+        </div>
+        <div class="navbar w-10/12 mx-auto">
+            <div class="navbar-start">
+                <button class="btn bg-primary font-semibold text-xl px-8 ">Home</button>
+            </div>
+            <div class="navbar-center lg:block hidden">
+              <a class="btn btn-ghost text-xl"><span><img src="assets/logo.png" alt=""></span>Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+            <img src="assets/coin.png" alt="">
+            <div class="ml-3 ">
+                <p class="text-xl font-bold text-[rgba(17,17,17,0.7)]"><span>5500</span>  BDT</p>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="w-10/12 mx-auto mt-6">
+           <div class="flex items-center gap-2">
+            <h1 class="text-2xl font-bold">Important FAQ</h1> 
+            <div class="size-10"><img src="assets/speech-bubble.png" alt=""></div>
+           </div>
+            <div class="my-8 rounded-xl border-2 border-[#1111111A]">
+                <!-- question-1 -->
+                <div tabindex="0" class="collapse collapse-arrow rounded-none border-base-300 border p-3">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+                </div>
+            
+                <!-- question-2 -->
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none p-3">
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div>
+
+                <!-- question-3 -->
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none p-3">
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div>
+
+                <!-- question-4 -->
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 rounded-none p-3 border">
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
