@@ -30,7 +30,7 @@
 </head>
 <body class="lexend-font">
     <header class="sticky top-0 z-10">
-        <div class="bg-[#F9F7F3] pb-8 pt-4">
+        <div class="bg-[rgb(249,247,243,0.7)] pb-8 pt-4 backdrop-blur-lg">
           <div class="flex justify-center mb-7 lg:hidden">
             <a class="btn btn-ghost text-xl"><span><img src="assets/logo.png" alt=""></span>Donate Bangladesh</a>
             </div>
@@ -52,96 +52,101 @@
          <!-- button section -->
          <section class="backdrop-blur-lg">
           <div class="lg:w-1/5 w-4/6 mx-auto py-10">
-            <button class="btn bg-primary font-semibold text-xl px-6 ">Donation</button>
-          <button class="btn btn-outline bg-white hover:bg-primary  border-[rgba(17,17,17,0.7)] text-[rgba(17,17,17,0.7)] hover:text-[#111111] hover:border-none font-semibold text-xl px-6 ">History</button>
+            <button id="donation-btn" class="btn border-[rgba(17,17,17,0.7)] bg-primary hover:bg-primary font-semibold text-xl px-6 text-[rgba(17,17,17,0.7)] hover:text-[#111111]">Donation</button>
+          <button id="history-btn" class="btn hover:bg-primary  border-[rgba(17,17,17,0.7)] text-[rgba(17,17,17,0.7)] hover:text-[#111111] hover:border-none font-semibold text-xl px-6 ">History</button>
           </div>
       </section>
     </header>
     <main>
-        <!-- card 1 section -->
-        <section class="w-10/12 mx-auto mb-8 p-10 rounded-xl border-2 border-[#1111111A]">
-            <div class="card lg:card-side lg:grid lg:grid-cols-2">
-                <figure>
-                  <img
-                    src="assets/noakhali.png"alt="Album" />
-                </figure>
-                <div class="lg:ml-8">
-                    <button class="btn mb-3 lg:mt-0 mt-3">
-                    <div class="flex">
-                        <img src="assets/coin.png" alt="">
-                        <div class="ml-2">
-                        <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>0</span>  BDT</p>
-                        </div>
-                        </div>
-                    </button>
-                <div>
-                    <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="text-[#111111B3] font-light my-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
-                    <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
-                </div>
-                </div>
+      <div id="donation-container">
+      <!-- card 1 section -->
+      <section class="w-10/12 mx-auto mb-8 p-10 rounded-xl border-2 border-[#1111111A]">
+          <div class="card lg:card-side lg:grid lg:grid-cols-2">
+              <figure>
+                <img
+                  src="assets/noakhali.png"alt="Album" />
+              </figure>
+              <div class="lg:ml-8">
+                  <button class="btn mb-3 lg:mt-0 mt-3">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <div class="ml-2">
+                      <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>0</span>  BDT</p>
+                      </div>
+                      </div>
+                  </button>
+              <div>
+                  <h2 class="card-title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p class="text-[#111111B3] font-light my-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
+                  <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
               </div>
-        </section>
-         <!-- card 2 section -->
-         <section class="w-10/12 mx-auto my-8 p-10 rounded-xl border-2 border-[#1111111A]">
-            <div class="card lg:card-side lg:grid lg:grid-cols-2">
-                <figure>
-                  <img
-                    src="assets/feni.png"alt="Album" />
-                </figure>
-                <div class="lg:ml-8">
-                    <button class="btn mb-3 lg:mt-0 mt-3">
-                    <div class="flex">
-                        <img src="assets/coin.png" alt="">
-                        <div class="ml-2">
-                        <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>600</span>  BDT</p>
-                        </div>
-                        </div>
-                    </button>
-                <div>
-                    <h2 class="card-title text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
-                    <p class="text-[#111111B3] font-light my-3"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
-                    <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
-                </div>
-                </div>
               </div>
-        </section>
-        <!-- card 3 section -->
-        <section class="w-10/12 mx-auto my-8 p-10 rounded-xl border-2 border-[#1111111A]">
-            <div class="card lg:card-side lg:grid lg:grid-cols-2">
-                <figure>
-                  <img
-                    src="assets/quota-protest.png"alt="Album" />
-                </figure>
-                <div class="lg:ml-8">
-                    <button class="btn mb-3 lg:mt-0 mt-3">
-                    <div class="flex">
-                        <img src="assets/coin.png" alt="">
-                        <div class="ml-2">
-                        <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>2400</span>  BDT</p>
-                        </div>
-                        </div>
-                    </button>
-                <div class="">
-                    <h2 class="card-title text-xl font-bold">Aid for Injured in the Quota Movement</h2>
-                    <p class="text-[#111111B3] font-light my-3">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
-                    <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
-                </div>
-                </div>
+            </div>
+      </section>
+      <!-- card 2 section -->
+      <section class="w-10/12 mx-auto my-8 p-10 rounded-xl border-2 border-[#1111111A]">
+          <div class="card lg:card-side lg:grid lg:grid-cols-2">
+              <figure>
+                <img
+                  src="assets/feni.png"alt="Album" />
+              </figure>
+              <div class="lg:ml-8">
+                  <button class="btn mb-3 lg:mt-0 mt-3">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <div class="ml-2">
+                      <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>600</span>  BDT</p>
+                      </div>
+                      </div>
+                  </button>
+              <div>
+                  <h2 class="card-title text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+                  <p class="text-[#111111B3] font-light my-3"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                  <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
+                  <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
               </div>
-        </section>
+              </div>
+            </div>
+      </section>
+      <!-- card 3 section -->
+      <section class="w-10/12 mx-auto my-8 p-10 rounded-xl border-2 border-[#1111111A]">
+          <div class="card lg:card-side lg:grid lg:grid-cols-2">
+              <figure>
+                <img
+                  src="assets/quota-protest.png"alt="Album" />
+              </figure>
+              <div class="lg:ml-8">
+                  <button class="btn mb-3 lg:mt-0 mt-3">
+                  <div class="flex">
+                      <img src="assets/coin.png" alt="">
+                      <div class="ml-2">
+                      <p class="text-lg text-[rgba(17,17,17,0.7)]"><span>2400</span>  BDT</p>
+                      </div>
+                      </div>
+                  </button>
+              <div class="">
+                  <h2 class="card-title text-xl font-bold">Aid for Injured in the Quota Movement</h2>
+                  <p class="text-[#111111B3] font-light my-3">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                  <input type="text" placeholder="Write Donation Amount" class="border-2 border-[#1111111A] rounded-lg p-2.5 w-full my-4">
+                  <button class="btn btn-wide w-full bg-primary text-xl font-semibold">Donate Now</button>
+              </div>
+              </div>
+            </div>
+      </section>
+      </div>
 
-        <!-- for history -->
-        <section class="hidden w-10/12 mx-auto my-8 p-6 rounded-xl border-2 border-[#1111111A]">
-        <h2 class="text-lx font-bold mb-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-        <p class="text-[#111111B3] font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-        </section>
+      <!-- for history -->
+      <section id="history-container" class="hidden w-10/12 mx-auto my-8 p-6 rounded-xl border-2 border-[#1111111A]">
+      <h2 class="text-lx font-bold mb-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+      <p class="text-[#111111B3] font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </section>
     </main>
     <footer class="bg-[#F9F7F3] pb-28">
 
     </footer>
+    <script src="js/blog.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/functionality.js"></script>
 </body>
 </html>
