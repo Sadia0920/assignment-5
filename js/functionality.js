@@ -5,12 +5,10 @@ function showSectionById(id){
 }
 function getInputElementById(id){
     const inputValue = parseFloat(document.getElementById(id).value);
-    // console.log(inputValue)
     return inputValue;
 }
 function getTextElementById(id){
     const inputText = parseFloat(document.getElementById(id).innerText);
-    // console.log(inputText)
     return inputText;
 }
 
