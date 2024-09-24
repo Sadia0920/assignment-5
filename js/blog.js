@@ -1,6 +1,4 @@
-// const date =new Date ();
-// console.log(date)
-// Noakhali Section
+// Home
 document.getElementById("btn-blog").addEventListener('click',function(){
     window.location.href='./home.html';
 })
@@ -8,13 +6,12 @@ document.getElementById("btn-blog").addEventListener('click',function(){
 document.getElementById("btn-donate-noakhali").addEventListener('click',function(){
     const donateInputNoakhali = getInputElementById('donate-input-noakhali');
     if(isNaN(donateInputNoakhali)){
-        alert("Failed to add money")
+        alert("Invalid Donation Amount")
         document.getElementById("donate-input-noakhali").value=' ';
         return;
     }
     const donateAmountNoakhali = getTextElementById('donate-amount-noakhali'); 
     const accountMoney = getTextElementById('account-money');
-
     if(donateInputNoakhali > accountMoney || donateInputNoakhali <= 0){
         alert("Failed to add money")
         document.getElementById("donate-input-noakhali").value=' ';
@@ -29,27 +26,24 @@ document.getElementById("btn-donate-noakhali").addEventListener('click',function
     document.getElementById("account-money").innerText=(remainingAccountMoney);
     document.getElementById("donate-input-noakhali").value=' ';
     document.getElementById('my_modal_5').showModal();
-
     const newDate = new Date();
-
     const div = document.createElement('div')
     div.classList.add('border-2')
     div.classList.add('rounded-xl')
     div.classList.add('my-6')
     div.innerHTML = `
-    <p class="mt-2 mx-5">${donateInputNoakhali} Taka is Donate for Flood at Noakhali, Bangladesh </P>
+    <p class="mt-2 mx-5">${donateInputNoakhali} Taka is Donated for Donate for Flood at Noakhali, Bangladesh </P>
     <br>
-    <p class="mb-2 mx-5" id="dateInput">${newDate}<p/>
+    <p class="mb-2 mx-5" id="dateInput">Date:${newDate}<p/>
     `
     document.getElementById('history-container').appendChild(div);
     }
-    
 })
 // Section-2
 document.getElementById("btn-donate-feni").addEventListener('click',function(){
     const donateInputFeni = getInputElementById('donate-input-feni');
     if(isNaN(donateInputFeni)){
-        alert("Failed to add money");
+        alert("Invalid Donation Amount");
         document.getElementById("donate-input-feni").value=' ';
         return;
     }
@@ -75,9 +69,9 @@ document.getElementById("btn-donate-feni").addEventListener('click',function(){
     div.classList.add('rounded-xl')
     div.classList.add('my-6')
     div.innerHTML = `
-    <p class="mt-2 mx-5">${donateInputFeni} Taka is Donate for Flood Relief in Feni,Bangladesh</P>
+    <p class="mt-2 mx-5">${donateInputFeni} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</P>
     <br>
-    <p class="mb-2 mx-5" id="dateInput">${newDate}<p/>
+    <p class="mb-2 mx-5" id="dateInput">Date:${newDate}<p/>
     `
     document.getElementById('history-container').appendChild(div);
     }
@@ -86,7 +80,7 @@ document.getElementById("btn-donate-feni").addEventListener('click',function(){
 document.getElementById("btn-donate-quota-movement").addEventListener('click',function(){
     const donateInputQuotaMovement = getInputElementById('donate-input-quota-movement');
     if(isNaN(donateInputQuotaMovement)){
-        alert("Failed to add money");
+        alert("Invalid Donation Amount");
         document.getElementById("donate-input-quota-movement").value=' ';
         return;
     }
@@ -112,9 +106,9 @@ document.getElementById("btn-donate-quota-movement").addEventListener('click',fu
     div.classList.add('rounded-xl')
     div.classList.add('my-6')
     div.innerHTML = `
-    <p class="mt-2 mx-5">${donateInputQuotaMovement} Taka is Aid for Injured in the Quota Movement</P>
+    <p class="mt-2 mx-5">${donateInputQuotaMovement} Taka is Donated for Aid for Injured in the Quota Movement</P>
     <br>
-    <p class="mb-2 mx-5" id="dateInput">${newDate}<p/>
+    <p class="mb-2 mx-5" id="dateInput">Date:${newDate}<p/>
     `
     document.getElementById('history-container').appendChild(div);
     }
