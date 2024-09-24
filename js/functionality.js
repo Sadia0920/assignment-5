@@ -13,3 +13,4 @@ function getTextElementById(id){
     // console.log(inputText)
     return inputText;
 }
+
