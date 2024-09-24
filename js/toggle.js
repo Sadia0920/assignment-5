@@ -9,4 +9,5 @@ document.getElementById('history-btn').addEventListener('click',function(event){
     showSectionById('history-container');
     document.getElementById('history-btn').classList.add('bg-primary')
     document.getElementById('donation-btn').classList.remove('bg-primary')
+    document.getElementById('footer').classList.add('hidden')
 })

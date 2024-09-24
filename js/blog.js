@@ -20,7 +20,7 @@ document.getElementById("btn-donate-noakhali").addEventListener('click',function
         return;
     }
     else{
-         // Add money to container
+    // Add money to container
     const totalDonateNoakhali = donateAmountNoakhali + donateInputNoakhali;
     document.getElementById("donate-amount-noakhali").innerText=(totalDonateNoakhali);
     // Add money to account
@@ -28,17 +28,22 @@ document.getElementById("btn-donate-noakhali").addEventListener('click',function
     document.getElementById("account-money").innerText=(remainingAccountMoney);
     document.getElementById("donate-input-noakhali").value=' ';
     document.getElementById('my_modal_5').showModal();
-    }
-   
+
+    const newDate = new Date();
+
     const div = document.createElement('div')
-    div.classList.add('')
+    div.classList.add('border-2')
+    div.classList.add('rounded-xl')
+    div.classList.add('my-6')
     div.innerHTML = `
-    <p>${donateInputNoakhali} Taka is Donate for Flood at Noakhali, Bangladesh </P>
-    <p id="historyDate"> </p>
+    <p class="mt-2 mx-5">${donateInputNoakhali} Taka is Donate for Flood at Noakhali, Bangladesh </P>
+    <br>
+    <p class="mb-2 mx-5" id="dateInput">${newDate}<p/>
     `
     document.getElementById('history-container').appendChild(div);
-    const newDate = date('historyDate');
-    document.getElementById('historyDate').innerText = (newDate);
+
+    }
+    
 })
 
 
