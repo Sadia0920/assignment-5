@@ -13,4 +13,7 @@ function getTextElementById(id){
     // console.log(inputText)
     return inputText;
 }
-
+function date(id){
+    const date =new Date ();
+    return date;
+}
